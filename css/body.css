@@ -42,3 +42,7 @@
 img{
     border-radius: 50%;
 }
+
+.row-centered{
+    text-align: center;
+}
