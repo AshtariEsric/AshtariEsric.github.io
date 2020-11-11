@@ -88,3 +88,15 @@
 		transform: translatey(0px);
 	}
 }
+
+.collapse
+{
+    color: white;
+}
+.collapsed
+{
+    color: white;
+}
+.accordion {
+    color: white;
+}
