@@ -1,11 +1,11 @@
 // Swift-Code mit Umbrüchen
-const swiftCode = `import UIKit
+const swiftCode = `import UIKit\n
 
-func sayHello() {
-    print("Hello, World!")
-}
+func sayHello() {\n
+    print("Hello, World!")\n
+}\n
 
-sayHello();`;
+sayHello()\n;`;
 
 // Animation des Swift-Codes
 const codeContainer = document.getElementById('code-container');
