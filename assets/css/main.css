@@ -3999,10 +3999,11 @@ input, select, textarea {
 	}
 	
 .code-container-wrapper {
-    max-height: 400px; /* Hier kannst du die maximale Höhe des Code-Fensters anpassen */
-    max-width: 400px;
-    overflow: auto;
+  max-height: 800px;
+  max-width: 800px;
+  overflow: auto;
 }
+
 
 .bild-rahmen {
   opacity: 0;
