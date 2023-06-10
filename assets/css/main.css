@@ -4000,6 +4000,7 @@ input, select, textarea {
 	
 .code-container-wrapper {
     max-height: 400px; /* Hier kannst du die maximale Höhe des Code-Fensters anpassen */
+    max-width: 400px;
     overflow: auto;
 }
 
