@@ -11,6 +11,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+        #code-container {
+            font-family: monospace;
+            white-space: pre;
+            overflow: hidden;
+        }
+    </style>
+		
 	</head>
 	<body class="landing is-preload">
 
@@ -65,8 +73,9 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							    <div id="code-container"></div>
-							     <script src="assets/js/codescript.js"></script>
+							    <pre><code id="code-container" class="language-swift"></code></pre>
+   								 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    							<script src="codescript.js"></script>
 							     
 								<h2>Magna primis lobortis<br />
 								sed ullamcorper</h2>
