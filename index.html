@@ -11,6 +11,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style> 
+        #code-container { 
+            font-family: monospace; 
+            white-space: pre; 
+            overflow: hidden; 
+        } 
+    </style> 
 	</head>
 	<body class="landing is-preload">
 
@@ -65,8 +72,46 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
+						<div class="content">
+						<div class="content">
 							    <div id="code-container"></div>
-							     <script src="codescript.js"></script>
+							     <script src="assets/js/codescript.js"></script></div></div>
+							     <div id="code-container"></div>
+
+							     <script>
+  							     // Funktion, die beim Eintritt des Elements in den sichtbaren Bereich aufgerufen wird
+  							     function handleIntersection(entries, observer) {
+    							     entries.forEach(function(entry) {
+      							     if (entry.isIntersecting) {
+        							     // Hier wird das JavaScript-Skript ausgeführt
+        							     loadScript();
+        							     // Beobachtung beenden, da das Skript bereits ausgeführt wurde
+        							     observer.unobserve(entry.target);
+      							     }
+    							     });
+  							     }
+
+  							     // Funktion zum Laden des JavaScript-Skripts
+  							     function loadScript() {
+    							     var script = document.createElement('script');
+    							     script.src = 'assets/js/codescript.js';
+    							     document.body.appendChild(script);
+  							     }
+
+  							     // Erstellen Sie eine Instanz des Intersection Observer
+  							     var observer = new IntersectionObserver(handleIntersection);
+
+  							     // Element auswählen, das überwacht werden soll
+  							     var container = document.querySelector('#code-container');
+
+  							     // Das Element dem Observer hinzufügen
+  							     observer.observe(container);
+							     </script>
+							     
+
+							     
+							     
+							     <div class="content">
 								<h2>Magna primis lobortis<br />
 								sed ullamcorper</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
