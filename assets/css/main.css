@@ -3997,3 +3997,17 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+	
+.bild-rahmen {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards; /* Hier kannst du die gewünschte Animationsdauer und den Animations-Effekt einstellen */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
